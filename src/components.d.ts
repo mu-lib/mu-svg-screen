@@ -45,7 +45,7 @@ export namespace Components {
     /**
     * The height of the screen (for scaling)
     */
-    'height'?: number;
+    'height': number;
     /**
     * Router history
     */
@@ -57,11 +57,11 @@ export namespace Components {
     /**
     * The src of the background image
     */
-    'src'?: string;
+    'src': string;
     /**
     * The width of the screen (for scaling)
     */
-    'width'?: number;
+    'width': number;
   }
 }
 
