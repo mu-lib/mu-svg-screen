@@ -2,12 +2,15 @@ import { Component, Prop } from '@stencil/core';
 import { RouterHistory } from '@stencil/router';
 import { Link, CircleLink, RectLink, LinkType } from '.';
 
+/**
+ * SVG screen component
+ */
 @Component({
   tag: 'mu-svg-screen',
   styleUrl: 'mu-svg-screen.css',
   shadow: true
 })
-export class MuSVGScreen {
+export class SVGScreen {
   /**
    * The width of the screen (for scaling)
    */
@@ -37,7 +40,7 @@ export class MuSVGScreen {
    * Handles click events
    * @param ev Click event
    */
-  handleClick(ev: UIEvent) {
+  onClick(ev: UIEvent) {
     if (this.history) {
       this.history.push((ev.currentTarget as HTMLElement).getAttribute('href'));
       ev.preventDefault();
@@ -51,12 +54,12 @@ export class MuSVGScreen {
         switch (link.type) {
           case LinkType.circle:
           const circle = link as CircleLink;
-          a = <a href={circle.href} onClick={(ev: UIEvent) => this.handleClick(ev)}><circle cx={circle.cx} cy={circle.cy} r={circle.r} /></a>
+          a = <a href={circle.href} onClick={(ev: UIEvent) => this.onClick(ev)}><circle cx={circle.cx} cy={circle.cy} r={circle.r} /></a>
           break;
 
           case LinkType.rect:
           const rect = link as RectLink;
-          a = <a href={rect.href} onClick={(ev: UIEvent) => this.handleClick(ev)}><rect width={rect.width} height={rect.height} x={rect.x} y={rect.y} /></a>
+          a = <a href={rect.href} onClick={(ev: UIEvent) => this.onClick(ev)}><rect width={rect.width} height={rect.height} x={rect.x} y={rect.y} /></a>
           break;
         }
         return a;
