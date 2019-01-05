@@ -1,23 +1,44 @@
-export enum LinkType {
-    circle = 'circle',
-    rect = 'rect'
-  }
-  
-  export interface Link {
-    type: LinkType;
-    href: string;
-  }
-  
-  export interface CircleLink extends Link {
-    cx: number;
-    cy: number;
-    r: number;
-  }
-  
-  export interface RectLink extends Link {
-    width: number;
-    height: number;
-    x: number;
-    y: number;
-  }
-  
+type Link = {
+  /**
+   * Type of link
+   */
+  type: "circle" | "rect";
+  /**
+   * Href (url) for link
+   */
+  href: string;
+};
+
+export type CircleLink = Link & {
+  /**
+   * Center X coord
+   */
+  cx: number;
+  /**
+   * Center Y coord
+   */
+  cy: number;
+  /**
+   * Radius
+   */
+  r: number;
+};
+
+export type RectLink = Link & {
+  /**
+   * Width
+   */
+  width: number;
+  /**
+   * Height
+   */
+  height: number;
+  /**
+   * X coord
+   */
+  x: number;
+  /**
+   * Y coord
+   */
+  y: number;
+};

@@ -10,7 +10,8 @@ import '@stencil/core';
 import '@stencil/router';
 import '@stencil/state-tunnel';
 import {
-  Link,
+  CircleLink,
+  RectLink,
 } from './components/mu-svg-screen';
 import {
   RouterHistory,
@@ -31,7 +32,7 @@ export namespace Components {
     /**
     * Array of `Link`s
     */
-    'links': Link[];
+    'links': Array<CircleLink|RectLink>;
     /**
     * The src of the background image
     */
@@ -53,7 +54,7 @@ export namespace Components {
     /**
     * Array of `Link`s
     */
-    'links'?: Link[];
+    'links'?: Array<CircleLink|RectLink>;
     /**
     * The src of the background image
     */
