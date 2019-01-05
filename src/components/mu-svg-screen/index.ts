@@ -1,4 +1,4 @@
-type Link = {
+export type Link = {
   /**
    * Type of link
    */

@@ -30,9 +30,9 @@ export namespace Components {
     */
     'history': RouterHistory;
     /**
-    * Array of `Link`s
+    * Array of links
     */
-    'links': Array<CircleLink|RectLink>;
+    'links': Array<JSX.Element|CircleLink|RectLink>;
     /**
     * The src of the background image
     */
@@ -52,9 +52,9 @@ export namespace Components {
     */
     'history'?: RouterHistory;
     /**
-    * Array of `Link`s
+    * Array of links
     */
-    'links'?: Array<CircleLink|RectLink>;
+    'links'?: Array<JSX.Element|CircleLink|RectLink>;
     /**
     * The src of the background image
     */
