@@ -1,0 +1,26 @@
+svg {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 900px;
+  width: 90%;
+}
+a:focus,
+a:hover {
+  outline: none;
+}
+a:focus path,
+a:hover path,
+a:focus circle,
+a:hover circle,
+a:focus rect,
+a:hover rect {
+  fill: rgba(30, 222, 121, 0.25);
+  cursor: pointer;
+}
+path,
+circle,
+rect {
+  fill: transparent;
+  cursor: pointer;
+  transition: fill 0.2s;
+}
