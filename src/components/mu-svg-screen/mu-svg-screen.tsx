@@ -1,6 +1,7 @@
 import { Component, Prop } from '@stencil/core';
 import { RouterHistory } from '@stencil/router';
 import { Link, CircleLink, RectLink } from '.';
+import { VNode } from '@stencil/core/dist/declarations';
 
 /**
  * SVG screen component
@@ -50,8 +51,7 @@ export class SVGScreen {
   render() {
     return (
       <svg style={{ backgroundImage: 'url(' + this.src + ')' }} viewBox={[0, 0, this.width, this.height].join(' ')} xmlns='http://www.w3.org/2000/svg'>{this.links.map((link) => {
-        let a: JSX.Element;
-
+        let a: VNode;
         switch ((link as Link).type) {
           case "circle":
           const circle = link as CircleLink;
@@ -64,7 +64,8 @@ export class SVGScreen {
           break;
 
           default:
-          a = link;
+          a = link as VNode;
+          a.vattrs.onClick = (ev: UIEvent) => this.onClick(ev);
         }
         return a;
       })}</svg>
