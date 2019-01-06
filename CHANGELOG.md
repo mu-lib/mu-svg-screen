@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/mu-lib/mu-svg-screen/compare/v0.1.0...v0.1.1) (2019-01-06)
+
+
+### Bug Fixes
+
+* Make sure to add onClick handler to links of type JSX.Element ([4c0988d](https://github.com/mu-lib/mu-svg-screen/commit/4c0988d))
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/mu-lib/mu-svg-screen/compare/v0.0.2...v0.1.0) (2019-01-05)
 

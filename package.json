@@ -1,6 +1,6 @@
 {
   "name": "@mu-lib/mu-svg-screen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Micro SVG screen Web Component",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
