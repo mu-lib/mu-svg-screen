@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/mu-lib/mu-svg-screen/compare/v0.1.1...v0.1.2) (2019-01-06)
+
+
+### Bug Fixes
+
+* Remove bad CSS ([b738e81](https://github.com/mu-lib/mu-svg-screen/commit/b738e81))
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/mu-lib/mu-svg-screen/compare/v0.1.0...v0.1.1) (2019-01-06)
 
